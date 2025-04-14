@@ -47,7 +47,7 @@ function TurfList() {
     console.log("Booked:", booking);
 
     try {
-      const response = await axios.post("http://localhost:3001/turfs", booking);
+      const response = await axios.post("https://urbanplaybackend.onrender.com/turfs", booking);
       console.log("Booking response:", response.data);
       alert("Turf booked successfully!");
     } catch (error) {
