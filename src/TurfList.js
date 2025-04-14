@@ -44,7 +44,7 @@ function TurfList() {
   const handleBooking = async (turf) => {
     const booking = { turfName: turf.name, rate: turf.ratePerHour };
     setBookedTurf(booking);
-    console.log("Booked:", booking);
+ 
 
     try {
       const response = await axios.post("https://urbanplaybackend.onrender.com/turfs", booking);
