@@ -21,7 +21,7 @@ function Register() {
       });
       console.log(response.data);
       alert("User registered successfully!");
-      navigate("/login"); // Redirect to login page after successful registration
+      navigate("/"); // Redirect to login page after successful registration
     } catch (error) {
       console.error(error.response?.data || error.message);
       alert("Registration failed!");
